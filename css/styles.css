@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url("../images/peter-broomfield-m3m-lnR90uM-unsplash 1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/* HEADER */
+header {
+  padding: 2em 5em;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.logo-box {
+  float: left;
+}
+
+.logo-box h2 {
+  color: #fff;
+  display: inline-block;
+  font-size: 3.3rem;
+  margin-left: 1rem;
+}
+
+nav {
+  float: right;
+  margin-top: 1rem;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 2em;
+}
+
+nav li:first-child {
+  font-weight: 700;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+/* MAIN */
+main {
+  display: inline-block;
+  position: absolute;
+  left: 10%;
+  top: 35%;
+}
+
+main h1 {
+  color: #00c2ff;
+  font-size: 3rem;
+}
+
+main h3 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 0.5rem 0 1.8rem;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  position: absolute;
+  bottom: 0vh;
+  -webkit-columns: 3;
+          columns: 3;
+  background-color: #000;
+  width: 100%;
+  padding: 1em 4em;
+}
+
+h4 {
+  color: #00c2ff;
+}
+
+p {
+  color: #fff;
+}
+
+/* BUTTONS */
+button {
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #00c2ff;
+  border: none;
+  padding: 0.6rem 0.9rem;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+button:hover {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
+button:active {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  background-color: #00a7db;
+}
